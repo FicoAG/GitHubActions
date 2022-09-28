@@ -9,3 +9,4 @@ jobs:
         with :
           Python-version: '3.10'
       - run: pip install poetry
+      - run: poetry build
