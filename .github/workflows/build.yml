@@ -1,12 +1,14 @@
 name: Build
-on: [push]
+on: [ push ]
 jobs:
   Building:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-python@v4
-        with :
+        with:
           Python-version: '3.10'
       - run: pip install poetry
       - run: poetry build
+      - run: ls ${{ github.workspace }}
+      - run: ls -a
