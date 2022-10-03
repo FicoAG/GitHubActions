@@ -1,3 +1,4 @@
+
 name: Build
 on: [ push ]
 jobs:
@@ -16,6 +17,4 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: ${{ github.workspace }}/dist/*
-          name: nombre
-          tag_name: etiqueta
         
