@@ -12,8 +12,10 @@ jobs:
         uses: snok/install-poetry@v1
       - run: poetry build
       - run: ls ${{ github.workspace }}
-      - name: Publish to GH releases
+      - name: Publish to GH Releases
         uses: softprops/action-gh-release@v1
         with:
-          files:  ${{ github.workspace }}/dist/*
+          files: ${{ github.workspace }}/dist/*
+          name: nombre
+          tag_name: etiqueta
         
