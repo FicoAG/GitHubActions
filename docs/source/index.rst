@@ -10,6 +10,9 @@ Welcome to GitHubActions's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   install
+   example
+
 
 
 Indices and tables
